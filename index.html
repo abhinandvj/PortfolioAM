@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abhinand VJ — Assistant Manager, Academic Operations & Full-Stack Developer." />
+  <title>Abhinand VJ | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="noise"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="Abhinand VJ home">
+        <span class="brand-mark">AV</span>
+        <span>Abhinand VJ</span>
+      </a>
+
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <i data-lucide="sun-moon"></i>
+        </button>
+        <a class="nav-cta" href="mailto:abhinandvj6@gmail.com">Let's talk <i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> Bengaluru · India</div>
+        <h1>Building better <span>teams</span> and better <span>products.</span></h1>
+        <p class="hero-lead">
+          Assistant Manager in Academic Operations with a Full-Stack Development background.
+          I connect people, processes and technology to solve real problems.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Explore my work <i data-lucide="arrow-down-right"></i></a>
+          <a class="btn ghost" href="https://github.com/AbhinandVJ6" target="_blank" rel="noreferrer">GitHub <i data-lucide="github"></i></a>
+        </div>
+
+        <div class="mini-proof">
+          <span>Currently</span>
+          <strong>ODA Class · Assistant Manager</strong>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="portrait-card">
+          <div class="portrait-glow"></div>
+          <img src="profile.jpeg" alt="Abhinand VJ" />
+          <div class="floating-card role-card">
+            <span class="tiny">ROLE</span>
+            <strong>Academic Operations</strong>
+            <small>Team · Performance · Student Engagement</small>
+          </div>
+          <div class="floating-card tech-card">
+            <span class="tiny">STACK</span>
+            <div class="tech-row"><span>Python</span><span>Django</span><span>React</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact section" id="about">
+      <div class="section-head reveal">
+        <span class="section-kicker">01 · IMPACT</span>
+        <h2>Numbers tell part of the story.</h2>
+      </div>
+      <div class="stats-grid">
+        <article class="stat-card reveal"><div class="stat-icon"><i data-lucide="users"></i></div><strong class="counter" data-target="4000">0</strong><span>students supported weekly</span></article>
+        <article class="stat-card reveal delay-1"><div class="stat-icon"><i data-lucide="layers-3"></i></div><strong class="counter" data-target="10">0</strong><span>+ project functionalities</span></article>
+        <article class="stat-card reveal delay-2"><div class="stat-icon"><i data-lucide="trending-down"></i></div><strong class="counter" data-target="40">0</strong><span>% less operational hassle</span></article>
+        <article class="stat-card reveal delay-3"><div class="stat-icon"><i data-lucide="code-2"></i></div><strong>Full-Stack</strong><span>Django · React · Redux</span></article>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="section-kicker">ABOUT ME</span>
+          <h3>People-first operations. Technology-minded problem solving.</h3>
+          <p>
+            My career sits at the intersection of academic operations, team coordination and software development.
+            I have managed fast-moving workflows, supported students, monitored performance and built internal web applications.
+          </p>
+          <p>
+            I’m especially interested in using technology to simplify repetitive work, improve communication and create useful digital experiences.
+          </p>
+        </div>
+        <div class="about-list reveal delay-1">
+          <div><span>01</span><strong>Leadership</strong><small>Team guidance & performance tracking</small></div>
+          <div><span>02</span><strong>Operations</strong><small>Workflow coordination & issue resolution</small></div>
+          <div><span>03</span><strong>Development</strong><small>Web apps with Django, React & Redux</small></div>
+          <div><span>04</span><strong>Mentoring</strong><small>Technical and academic guidance</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="section-head split reveal">
+        <div><span class="section-kicker">02 · EXPERIENCE</span><h2>A career built across people & technology.</h2></div>
+        <span class="section-note">2022 — Present</span>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item active reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">APR 2026 — PRESENT</div>
+          <div class="timeline-main">
+            <div class="company-row"><h3>ODA Class</h3><span>Assistant Manager</span></div>
+            <p>Managing and guiding academic operations, team performance and student engagement while supporting 4000+ students weekly.</p>
+            <button class="details-toggle">View responsibilities <i data-lucide="chevron-down"></i></button>
+            <div class="details">
+              <ul>
+                <li>Monitor team performance and operational targets.</li>
+                <li>Coordinate with internal teams for workflow and issue resolution.</li>
+                <li>Support training, performance tracking and daily operations.</li>
+                <li>Provide structured mentorship and communication support to students.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">JUL 2024 — APR 2026</div>
+          <div class="timeline-main">
+            <div class="company-row"><h3>ODA Class</h3><span>Academic Mentor</span></div>
+            <p>Mentored students in technical subjects, project understanding and structured academic learning.</p>
+            <button class="details-toggle">View responsibilities <i data-lucide="chevron-down"></i></button>
+            <div class="details"><ul><li>Simplified complex concepts for better learning clarity.</li><li>Provided academic guidance and structured support.</li><li>Assisted students with assignments and technical learning.</li></ul></div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">MAR 2023 — MAR 2024</div>
+          <div class="timeline-main">
+            <div class="company-row"><h3>NoBroker</h3><span>Associate Relationship Manager</span></div>
+            <p>Managed client communication, service-related queries and coordination between customers and internal teams.</p>
+            <button class="details-toggle">View responsibilities <i data-lucide="chevron-down"></i></button>
+            <div class="details"><ul><li>Managed customer communication and support.</li><li>Coordinated service workflows with internal teams.</li><li>Ensured smooth processing and customer experience.</li></ul></div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">MAY 2022 — FEB 2023</div>
+          <div class="timeline-main">
+            <div class="company-row"><h3>TECH I.S</h3><span>Full-Stack Developer</span></div>
+            <p>Worked on internal web development, CRM backend work and applications for company requirements.</p>
+            <button class="details-toggle">View responsibilities <i data-lucide="chevron-down"></i></button>
+            <div class="details"><ul><li>Worked on internal web development projects.</li><li>Developed applications according to company requirements.</li><li>Worked on CRM backend functionality.</li><li>Supported students with web development and data science concepts.</li></ul></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="section-head split reveal">
+        <div><span class="section-kicker">03 · SELECTED WORK</span><h2>Projects that solve actual problems.</h2></div>
+        <button class="text-btn" id="openProject">Open project details <i data-lucide="arrow-up-right"></i></button>
+      </div>
+
+      <div class="project-feature reveal">
+        <div class="project-number">01</div>
+        <div class="project-copy">
+          <div class="tag">WEB APPLICATION · TECH I.S</div>
+          <h3>Leave Management System</h3>
+          <p>
+            A leave management application built for employees across USA, Tokyo and Bangalore,
+            integrated into the TECH I.S Task Management System.
+          </p>
+          <div class="project-highlights">
+            <span><b>10+</b> functionalities</span>
+            <span><b>10+</b> device platforms</span>
+            <span><b>40%</b> less hassle</span>
+          </div>
+          <div class="stack"><span>Django</span><span>React</span><span>Redux</span><span>REST/API</span></div>
+          <button class="btn primary small" id="projectBtn">See how it worked <i data-lucide="maximize-2"></i></button>
+        </div>
+        <div class="project-visual">
+          <div class="window">
+            <div class="window-top"><span></span><span></span><span></span><label>leave-management</label></div>
+            <div class="mock-ui">
+              <div class="mock-sidebar"><b>TECH I.S</b><span>Dashboard</span><span class="selected">Leaves</span><span>Team</span><span>Reports</span></div>
+              <div class="mock-content"><small>LEAVE REQUEST</small><strong>Annual Leave</strong><div class="mock-line"></div><div class="mock-line short"></div><div class="mock-button">Submit Request</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-secondary reveal">
+        <div><span class="tag">B.TECH PROJECT</span><h3>Stepper Motor Based Flow Control Valve</h3><p>Controller design and validation project combining electronics, control and practical system thinking.</p></div>
+        <div class="project-arrow"><i data-lucide="arrow-up-right"></i></div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="section-head reveal">
+        <span class="section-kicker">04 · TOOLKIT</span>
+        <h2>Tools I use to turn ideas into outcomes.</h2>
+      </div>
+      <div class="skill-filters reveal">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="frontend">Frontend</button>
+        <button class="filter" data-filter="backend">Backend</button>
+        <button class="filter" data-filter="tools">Tools</button>
+        <button class="filter" data-filter="operations">Operations</button>
+      </div>
+      <div class="skills-grid">
+        <div class="skill reveal" data-cat="frontend"><i data-lucide="layout-template"></i><strong>React</strong><span>Frontend</span></div>
+        <div class="skill reveal" data-cat="frontend"><i data-lucide="blocks"></i><strong>Redux</strong><span>State management</span></div>
+        <div class="skill reveal" data-cat="frontend"><i data-lucide="file-code-2"></i><strong>HTML / CSS</strong><span>Web fundamentals</span></div>
+        <div class="skill reveal" data-cat="frontend"><i data-lucide="braces"></i><strong>JavaScript</strong><span>Web programming</span></div>
+        <div class="skill reveal" data-cat="backend"><i data-lucide="server"></i><strong>Django</strong><span>Backend</span></div>
+        <div class="skill reveal" data-cat="backend"><i data-lucide="code-xml"></i><strong>Python</strong><span>Programming</span></div>
+        <div class="skill reveal" data-cat="backend"><i data-lucide="database"></i><strong>MySQL / SQLite</strong><span>Databases</span></div>
+        <div class="skill reveal" data-cat="tools"><i data-lucide="git-branch"></i><strong>Git / GitHub</strong><span>Version control</span></div>
+        <div class="skill reveal" data-cat="tools"><i data-lucide="table-2"></i><strong>Excel</strong><span>Analysis & operations</span></div>
+        <div class="skill reveal" data-cat="operations"><i data-lucide="users-round"></i><strong>Team Management</strong><span>Leadership</span></div>
+        <div class="skill reveal" data-cat="operations"><i data-lucide="gauge"></i><strong>Performance Monitoring</strong><span>Operations</span></div>
+        <div class="skill reveal" data-cat="operations"><i data-lucide="messages-square"></i><strong>Communication</strong><span>Student & client engagement</span></div>
+      </div>
+    </section>
+
+    <section class="education section">
+      <div class="edu-card reveal">
+        <div><span class="section-kicker">05 · EDUCATION</span><h2>B.Tech — Electrical & Electronics Engineering</h2><p>Prist Institute of Engineering & Technology · 2016 — 2020</p></div>
+        <strong class="cgpa">7.34<small>CGPA</small></strong>
+      </div>
+      <div class="certs reveal">
+        <span class="section-kicker">CERTIFICATIONS</span>
+        <div class="cert-row"><span>Web Development in HTML & CSS</span><small>Masai School</small></div>
+        <div class="cert-row"><span>Programming in C</span><small>IIT Bombay / Indian Institute of Bombay</small></div>
+        <div class="cert-row"><span>AutoCAD</span><small>Certified Professional</small></div>
+        <div class="cert-row"><span>Web Development</span><small>Spark Technologies Pvt. Ltd.</small></div>
+        <div class="cert-row"><span>Cambridge English ESOL</span><small>Cambridge Institution, U.K.</small></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-card reveal">
+        <div>
+          <span class="section-kicker">06 · CONTACT</span>
+          <h2>Have a project, opportunity or idea?</h2>
+          <p>Let’s build something useful together.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:abhinandvj6@gmail.com">Email me <i data-lucide="mail"></i></a>
+          <button class="btn ghost copy-email" data-email="abhinandvj6@gmail.com">Copy email <i data-lucide="copy"></i></button>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/AbhinandVJ6" target="_blank" rel="noreferrer"><i data-lucide="github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/abhinand-vj-9a308a94/" target="_blank" rel="noreferrer"><i data-lucide="linkedin"></i> LinkedIn</a>
+          <span><i data-lucide="map-pin"></i> Bengaluru, Karnataka</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Abhinand VJ</span>
+    <span>Always learning. Always building. 🚀</span>
+  </footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close"><i data-lucide="x"></i></button>
+      <span class="section-kicker">PROJECT DEEP DIVE</span>
+      <h2>Leave Management System</h2>
+      <p>A focused look at the problem, implementation and outcome.</p>
+      <div class="modal-grid">
+        <div><span>Problem</span><strong>Make employee leave requests easier to manage across distributed teams.</strong></div>
+        <div><span>Build</span><strong>Django backend + React/Redux frontend with responsive web workflows.</strong></div>
+        <div><span>Scope</span><strong>10+ functionalities for employees in USA, Tokyo and Bangalore.</strong></div>
+        <div><span>Outcome</span><strong>Operational process redesigned to reduce employee hassle by 40%.</strong></div>
+      </div>
+      <div class="stack"><span>Django</span><span>React</span><span>Redux</span><span>Responsive UI</span></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Email copied!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
