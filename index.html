@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="spotlight"></div>
+  <div class="command-hint"><kbd>⌘</kbd><span>+</span><kbd>K</kbd><small>Quick navigation</small></div>
   <div class="progress"></div>
   <div class="noise"></div>
   <div class="orb orb-a"></div>
@@ -21,7 +25,7 @@
   <header class="nav-wrap">
     <nav class="nav">
       <a class="brand" href="#home" aria-label="Abhinand VJ home">
-        <span class="brand-mark">AV</span>
+        <span class="brand-mark">A</span>
         <span>Abhinand VJ</span>
       </a>
 
@@ -50,7 +54,9 @@
     <section class="hero section" id="home">
       <div class="hero-copy reveal">
         <div class="eyebrow"><span class="pulse"></span> Bengaluru · India</div>
-        <h1>Building better <span>teams</span> and better <span>products.</span></h1>
+        <div class="hero-kicker">PEOPLE × PROCESS × TECHNOLOGY</div>
+        <h1>Building <span>better teams</span><br>and <span>better products.</span></h1>
+        <div class="type-line"><span>I work across </span><b id="typeTarget">Team Management</b><i></i></div>
         <p class="hero-lead">
           Assistant Manager in Academic Operations with a Full-Stack Development background.
           I connect people, processes and technology to solve real problems.
@@ -61,19 +67,28 @@
           <a class="btn ghost" href="https://github.com/AbhinandVJ6" target="_blank" rel="noreferrer">GitHub <i data-lucide="github"></i></a>
         </div>
 
+        <div class="hero-pills">
+          <span><i data-lucide="sparkles"></i> Problem solver</span>
+          <span><i data-lucide="layers-3"></i> Full-stack background</span>
+          <span><i data-lucide="users"></i> People-first leader</span>
+        </div>
+
         <div class="mini-proof">
           <span>Currently</span>
           <strong>ODA Class · Assistant Manager</strong>
         </div>
       </div>
 
-      <div class="hero-visual reveal delay-1">
+      <div class="hero-visual reveal delay-1" id="heroVisual">
         <div class="portrait-card">
           <div class="portrait-glow"></div>
+          <div class="photo-orbit orbit-one"><span>Team Management</span></div>
+          <div class="photo-orbit orbit-two"><span>Problem Solving</span></div>
+          <div class="photo-orbit orbit-three"><span>Data Analysis</span></div>
           <img src="profile.jpeg" alt="Abhinand VJ" />
           <div class="floating-card role-card">
             <span class="tiny">ROLE</span>
-            <strong>Academic Operations</strong>
+            <strong>Assistant Manager</strong>
             <small>Team · Performance · Student Engagement</small>
           </div>
           
@@ -87,10 +102,18 @@
         <h2>Numbers tell part of the story.</h2>
       </div>
       <div class="stats-grid">
-        <article class="stat-card reveal"><div class="stat-icon"><i data-lucide="users"></i></div><strong class="counter" data-target="4000">0</strong><span>students supported weekly</span></article>
-        <article class="stat-card reveal delay-1"><div class="stat-icon"><i data-lucide="layers-3"></i></div><strong class="counter" data-target="10">0</strong><span>+ project functionalities</span></article>
-        <article class="stat-card reveal delay-2"><div class="stat-icon"><i data-lucide="trending-down"></i></div><strong class="counter" data-target="40">0</strong><span>% less operational hassle</span></article>
+        <article class="stat-card reveal"><div class="stat-icon"><i data-lucide="users"></i></div><strong class="counter" data-target="4000">0</strong><span>students supported weekly</span></article>        <article class="stat-card reveal delay-2"><div class="stat-icon"><i data-lucide="trending-down"></i></div><strong class="counter" data-target="40">0</strong><span>% less operational hassle</span></article>
         <article class="stat-card reveal delay-3"><div class="stat-icon"><i data-lucide="code-2"></i></div><strong>Full-Stack</strong><span>Django · React · Redux</span></article>
+      </div>
+
+      <div class="capability-strip reveal">
+        <button class="cap active" data-cap="lead"><span>01</span><b>Lead</b><small>Teams & performance</small></button>
+        <button class="cap" data-cap="build"><span>02</span><b>Build</b><small>Web products & workflows</small></button>
+        <button class="cap" data-cap="solve"><span>03</span><b>Solve</b><small>Operational problems</small></button>
+        <button class="cap" data-cap="mentor"><span>04</span><b>Mentor</b><small>Students & teams</small></button>
+      </div>
+      <div class="cap-output reveal" id="capOutput">
+        <span>CURRENT MODE</span><strong>Lead with clarity, align people and turn goals into trackable action.</strong>
       </div>
 
       <div class="about-grid">
@@ -120,7 +143,7 @@
         <span class="section-note">2022 — Present</span>
       </div>
 
-      <div class="timeline">
+      <div class="timeline-progress"><span></span></div><div class="timeline">
         <article class="timeline-item active reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-date">APR 2026 — PRESENT</div>
@@ -199,7 +222,7 @@
         </div>
         <div class="project-visual">
           <div class="window">
-            <div class="window-top"><span></span><span></span><span></span><label>leave-management</label></div>
+            <div class="window-top"><span></span><span></span><span></span><label>leave-management</label><em>LIVE PREVIEW</em></div>
             <div class="mock-ui">
               <div class="mock-sidebar"><b>TECH I.S</b><span>Dashboard</span><span class="selected">Leaves</span><span>Team</span><span>Reports</span></div>
               <div class="mock-content"><small>LEAVE REQUEST</small><strong>Annual Leave</strong><div class="mock-line"></div><div class="mock-line short"></div><div class="mock-button">Submit Request</div></div>
@@ -208,9 +231,12 @@
         </div>
       </div>
 
-      <div class="project-secondary reveal">
+      <div class="project-secondary reveal project-switcher">
         <div><span class="tag">B.TECH PROJECT</span><h3>Stepper Motor Based Flow Control Valve</h3><p>Controller design and validation project combining electronics, control and practical system thinking.</p></div>
-        <div class="project-arrow"><i data-lucide="arrow-up-right"></i></div>
+        <div class="project-side">
+          <span class="project-index">02 / 02</span>
+          <button class="project-arrow" id="projectPulse" aria-label="Highlight project"><i data-lucide="arrow-up-right"></i></button>
+        </div>
       </div>
     </section>
 
@@ -279,8 +305,24 @@
 
   <footer>
     <span>© <span id="year"></span> Abhinand VJ</span>
-    <span>Always learning. Always building. 🚀</span>
+    <span>Always learning. Always building.</span>
+    <button class="back-top" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
   </footer>
+
+  <div class="command-palette" id="commandPalette" aria-hidden="true">
+    <div class="command-backdrop"></div>
+    <div class="command-box">
+      <div class="command-top"><i data-lucide="search"></i><input id="commandInput" placeholder="Jump to a section..." autocomplete="off"><kbd>ESC</kbd></div>
+      <div class="command-results">
+        <button data-jump="#home"><span>01</span> Home <kbd>H</kbd></button>
+        <button data-jump="#about"><span>02</span> About <kbd>A</kbd></button>
+        <button data-jump="#experience"><span>03</span> Experience <kbd>E</kbd></button>
+        <button data-jump="#projects"><span>04</span> Projects <kbd>P</kbd></button>
+        <button data-jump="#skills"><span>05</span> Skills <kbd>S</kbd></button>
+        <button data-jump="#contact"><span>06</span> Contact <kbd>C</kbd></button>
+      </div>
+    </div>
+  </div>
 
   <div class="modal" id="projectModal" aria-hidden="true">
     <div class="modal-backdrop"></div>
